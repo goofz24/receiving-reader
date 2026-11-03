@@ -10,7 +10,6 @@ import { readdir, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import Anthropic from "@anthropic-ai/sdk";
-import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { Hono } from "hono";
 import { DEFAULT_MODEL, ExtractionError, extractDocument, isSupportedType } from "./extract";
@@ -125,10 +124,4 @@ export function createApp(deps: { client?: Anthropic; spend?: SpendLog } = {}) {
     app.use("/*", serveStatic({ root: "./dist" }));
   }
   return app;
-}
-
-if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith("server/index.ts")) {
-  const port = Number(process.env.PORT ?? 8787);
-  serve({ fetch: createApp().fetch, port });
-  console.log(`API on http://localhost:${port} (${hasKey() ? "live: API key found" : "sample mode: no API key"})`);
 }

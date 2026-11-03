@@ -6,10 +6,10 @@
   "description": "Reads supplier packing slips and invoices with the Claude API, checks them against the purchase order, and measures its own accuracy.",
   "scripts": {
     "dev": "concurrently -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
-    "dev:api": "tsx watch server/index.ts",
+    "dev:api": "tsx watch server/main.ts",
     "dev:web": "vite",
     "build": "tsc -p tsconfig.json && vite build",
-    "start": "tsx server/index.ts",
+    "start": "tsx server/main.ts",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "check": "npm run typecheck && npm test",
