@@ -1,0 +1,28 @@
+{
+  "po_number": "PO-11072",
+  "supplier_name": "Harborline Janitorial Supply",
+  "order_date": "2026-10-23",
+  "lines": [
+    {
+      "sku": "HJ-2201",
+      "description": "All-Purpose Cleaner Concentrate 1 Gal",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "HJ-6620",
+      "description": "Glass Cleaner Spray 32oz",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "HJ-7301",
+      "description": "Wet Floor Sign Bilingual",
+      "quantity_ordered": 2,
+      "unit": "EA",
+      "unit_price": null
+    }
+  ]
+}

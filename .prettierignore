@@ -1,0 +1,7 @@
+dist
+samples/documents
+samples/answers
+samples/purchase-orders
+eval/results
+eval/reports
+package-lock.json

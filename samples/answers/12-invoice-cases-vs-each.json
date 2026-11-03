@@ -1,0 +1,62 @@
+{
+  "id": "12-invoice-cases-vs-each",
+  "file": "12-invoice-cases-vs-each.pdf",
+  "title": "Invoice in cases, order in units",
+  "tests": "Billed in cases (12/CS), ordered in eaches: 3 CS = 36 EA. One line in boxes with no pack size must be counted by hand.",
+  "expected_flags": [
+    "unit_mismatch"
+  ],
+  "answer": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Harborline Janitorial Supply",
+    "document_number": "INV-209310",
+    "document_date": "2026-10-29",
+    "po_number": "PO-11090",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "HJ-6620",
+        "description": "Glass Cleaner Spray 32oz",
+        "quantity": 3,
+        "unit": "CS",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 46.8,
+        "line_total": 140.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-6702",
+        "description": "Disinfectant Wipes Canister",
+        "quantity": 4,
+        "unit": "CS",
+        "pack_size": 6,
+        "quantity_backordered": null,
+        "unit_price": 31.5,
+        "line_total": 126,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-0870",
+        "description": "Nitrile Gloves Large",
+        "quantity": 5,
+        "unit": "BX",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 11.95,
+        "line_total": 59.75,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 326.15,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": 326.15,
+    "warnings": []
+  }
+}

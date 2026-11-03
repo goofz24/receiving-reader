@@ -1,0 +1,21 @@
+{
+  "po_number": "PO-11099",
+  "supplier_name": "Summit Snack Wholesale",
+  "order_date": "2026-11-01",
+  "lines": [
+    {
+      "sku": "SN-2205",
+      "description": "Granola Bars Oat Honey",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 20.4
+    },
+    {
+      "sku": "SN-2206",
+      "description": "Granola Bars Chocolate Chip",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 20.4
+    }
+  ]
+}

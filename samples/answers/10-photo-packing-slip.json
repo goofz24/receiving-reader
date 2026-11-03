@@ -1,0 +1,84 @@
+{
+  "id": "10-photo-packing-slip",
+  "file": "10-photo-packing-slip.jpg",
+  "title": "Phone photo of a packing slip",
+  "tests": "Same kind of slip as a crooked phone photo on a desk.",
+  "expected_flags": [],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Bluewater Paper & Packaging",
+    "document_number": "BW-PS-40218",
+    "document_date": "2026-10-24",
+    "po_number": "PO-11075",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "BW-CUP-12",
+        "description": "Hot Cups 12oz Paper",
+        "quantity": 8,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-LID-12",
+        "description": "Hot Cup Lids 12oz",
+        "quantity": 8,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-STR-07",
+        "description": "Wrapped Straws 7.75in",
+        "quantity": 3,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-CLM-96",
+        "description": "Clamshell Containers 9x6",
+        "quantity": 5,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-FL-12",
+        "description": "Aluminum Foil Roll 12in",
+        "quantity": 6,
+        "unit": "RL",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

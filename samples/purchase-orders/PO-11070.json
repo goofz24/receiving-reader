@@ -1,0 +1,35 @@
+{
+  "po_number": "PO-11070",
+  "supplier_name": "Tri-Point Hardware Distributors",
+  "order_date": "2026-10-22",
+  "lines": [
+    {
+      "sku": "TP-31-440",
+      "description": "Garden Hose 50ft",
+      "quantity_ordered": 10,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-12-010",
+      "description": "Work Gloves Leather L",
+      "quantity_ordered": 24,
+      "unit": "PR",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-55-702",
+      "description": "LED Flashlight AA",
+      "quantity_ordered": 12,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-18-330",
+      "description": "Zip Ties 8in Black",
+      "quantity_ordered": 15,
+      "unit": "PK",
+      "unit_price": null
+    }
+  ]
+}

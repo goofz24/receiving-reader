@@ -1,0 +1,21 @@
+{
+  "po_number": "45000193",
+  "supplier_name": "Bluewater Paper & Packaging",
+  "order_date": "2026-10-07",
+  "lines": [
+    {
+      "sku": "BW-PT-800",
+      "description": "PAPER TOWEL ROLLS KITCHEN",
+      "quantity_ordered": 4,
+      "unit": "CS",
+      "unit_price": 32.9
+    },
+    {
+      "sku": "BW-FL-18",
+      "description": "ALUMINUM FOIL ROLL 18IN",
+      "quantity_ordered": 2,
+      "unit": "RL",
+      "unit_price": 21.4
+    }
+  ]
+}

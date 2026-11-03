@@ -1,0 +1,152 @@
+[
+  {
+    "id": "01-invoice-basic",
+    "file": "01-invoice-basic.pdf",
+    "title": "Simple invoice",
+    "tests": "A clean, typed invoice that matches its PO. The easy baseline.",
+    "expected_flags": []
+  },
+  {
+    "id": "02-packing-slip-basic",
+    "file": "02-packing-slip-basic.pdf",
+    "title": "Simple packing slip",
+    "tests": "Packing slip with no prices. Ordered and shipped columns agree.",
+    "expected_flags": []
+  },
+  {
+    "id": "03-invoice-discount-freight-tax",
+    "file": "03-invoice-discount-freight-tax.pdf",
+    "title": "Invoice with discount, freight and tax",
+    "tests": "Totals block with four parts. Reader must put each amount in the right field.",
+    "expected_flags": []
+  },
+  {
+    "id": "04-invoice-line-math-error",
+    "file": "04-invoice-line-math-error.pdf",
+    "title": "Invoice with a wrong line total",
+    "tests": "Supplier typo: 12 x $18.50 printed as $228.00. Reader must copy it, code must catch it.",
+    "expected_flags": [
+      "line_math"
+    ]
+  },
+  {
+    "id": "05-invoice-subtotal-error",
+    "file": "05-invoice-subtotal-error.pdf",
+    "title": "Invoice whose subtotal is wrong",
+    "tests": "Lines are right but the subtotal is $10 too high. Code must catch it.",
+    "expected_flags": [
+      "subtotal_mismatch"
+    ]
+  },
+  {
+    "id": "06-packing-slip-backorder",
+    "file": "06-packing-slip-backorder.pdf",
+    "title": "Packing slip with back-orders",
+    "tests": "Ordered / shipped / back-ordered columns. Reader must take shipped, not ordered.",
+    "expected_flags": [
+      "backordered"
+    ]
+  },
+  {
+    "id": "07-packing-slip-short",
+    "file": "07-packing-slip-short.pdf",
+    "title": "Short-shipped packing slip",
+    "tests": "Supplier sent 18 of the 24 ordered with no back-order note. Must be flagged against the PO.",
+    "expected_flags": [
+      "qty_short"
+    ]
+  },
+  {
+    "id": "08-factura-spanish",
+    "file": "08-factura-spanish.pdf",
+    "title": "Spanish invoice (factura) with IVU",
+    "tests": "Spanish labels, day/month date, cases with 'caja de 12', and IVU tax.",
+    "expected_flags": []
+  },
+  {
+    "id": "09-invoice-two-pages",
+    "file": "09-invoice-two-pages.pdf",
+    "title": "Two-page invoice",
+    "tests": "28 lines that run onto a second page. Reader must not drop or repeat lines.",
+    "expected_flags": []
+  },
+  {
+    "id": "10-photo-packing-slip",
+    "file": "10-photo-packing-slip.jpg",
+    "title": "Phone photo of a packing slip",
+    "tests": "Same kind of slip as a crooked phone photo on a desk.",
+    "expected_flags": []
+  },
+  {
+    "id": "11-photo-invoice-blurry",
+    "file": "11-photo-invoice-blurry.jpg",
+    "title": "Blurry phone photo of an invoice",
+    "tests": "Lower-quality photo, more tilt and blur. Tests how reading holds up on bad input.",
+    "expected_flags": []
+  },
+  {
+    "id": "12-invoice-cases-vs-each",
+    "file": "12-invoice-cases-vs-each.pdf",
+    "title": "Invoice in cases, order in units",
+    "tests": "Billed in cases (12/CS), ordered in eaches: 3 CS = 36 EA. One line in boxes with no pack size must be counted by hand.",
+    "expected_flags": [
+      "unit_mismatch"
+    ]
+  },
+  {
+    "id": "13-packing-slip-hand-correction",
+    "file": "13-packing-slip-hand-correction.jpg",
+    "title": "Packing slip with a hand correction",
+    "tests": "The 10 printed on one line is crossed out and 8 written by hand. Reader must use 8 and mark it low confidence.",
+    "expected_flags": [
+      "qty_short",
+      "low_confidence"
+    ]
+  },
+  {
+    "id": "14-packing-slip-substitution",
+    "file": "14-packing-slip-substitution.pdf",
+    "title": "Packing slip with a substituted item",
+    "tests": "Supplier sent a different item number in place of one that was ordered.",
+    "expected_flags": [
+      "not_on_po",
+      "missing_from_shipment"
+    ]
+  },
+  {
+    "id": "15-handwritten-farm-invoice",
+    "file": "15-handwritten-farm-invoice.jpg",
+    "title": "Handwritten invoice from a small farm",
+    "tests": "Handwritten, Spanish, no item numbers and no PO number, like many small local suppliers.",
+    "expected_flags": [
+      "missing_sku",
+      "po_missing"
+    ]
+  },
+  {
+    "id": "16-invoice-odd-formats",
+    "file": "16-invoice-odd-formats.pdf",
+    "title": "Invoice with unusual date and PO formats",
+    "tests": "Date printed as 07-OCT-26 and PO as 'PO# 4500-0193' while the store's system stores 45000193.",
+    "expected_flags": []
+  },
+  {
+    "id": "17-invoice-duplicate-lines-over",
+    "file": "17-invoice-duplicate-lines-over.pdf",
+    "title": "Invoice with the same item twice",
+    "tests": "One item billed on two lines (two lots). Together they are more than was ordered.",
+    "expected_flags": [
+      "duplicate_sku",
+      "qty_over"
+    ]
+  },
+  {
+    "id": "18-factura-photo-price",
+    "file": "18-factura-photo-price.jpg",
+    "title": "Photo of a Spanish invoice billed above the PO price",
+    "tests": "Phone photo, Spanish. Coffee billed at $62.40 a case when the PO says $58.80.",
+    "expected_flags": [
+      "price_mismatch"
+    ]
+  }
+]

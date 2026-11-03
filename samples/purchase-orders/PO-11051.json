@@ -1,0 +1,35 @@
+{
+  "po_number": "PO-11051",
+  "supplier_name": "Tri-Point Hardware Distributors",
+  "order_date": "2026-10-16",
+  "lines": [
+    {
+      "sku": "TP-10-332",
+      "description": "Wood Screws #8 x 1-1/4\"",
+      "quantity_ordered": 20,
+      "unit": "BX",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-22-108",
+      "description": "Duct Tape Silver 2in",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-41-900",
+      "description": "Extension Cord 25ft Outdoor",
+      "quantity_ordered": 6,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "TP-07-215",
+      "description": "Utility Knife Retractable",
+      "quantity_ordered": 12,
+      "unit": "EA",
+      "unit_price": null
+    }
+  ]
+}

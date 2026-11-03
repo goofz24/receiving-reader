@@ -1,0 +1,63 @@
+{
+  "id": "14-packing-slip-substitution",
+  "file": "14-packing-slip-substitution.pdf",
+  "title": "Packing slip with a substituted item",
+  "tests": "Supplier sent a different item number in place of one that was ordered.",
+  "expected_flags": [
+    "not_on_po",
+    "missing_from_shipment"
+  ],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Coastal Electric Parts",
+    "document_number": "PL-448402",
+    "document_date": "2026-10-30",
+    "po_number": "PO-11095",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "CE-LED-9W",
+        "description": "LED BULB A19 9W 5000K",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-LED-11W",
+        "description": "LED BULB A19 11W 5000K",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-SW-1P",
+        "description": "TOGGLE SWITCH 1-POLE WHITE",
+        "quantity": 20,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

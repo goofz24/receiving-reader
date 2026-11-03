@@ -1,0 +1,63 @@
+{
+  "id": "17-invoice-duplicate-lines-over",
+  "file": "17-invoice-duplicate-lines-over.pdf",
+  "title": "Invoice with the same item twice",
+  "tests": "One item billed on two lines (two lots). Together they are more than was ordered.",
+  "expected_flags": [
+    "duplicate_sku",
+    "qty_over"
+  ],
+  "answer": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Summit Snack Wholesale",
+    "document_number": "SSW-77231",
+    "document_date": "2026-11-01",
+    "po_number": "PO-11099",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "SN-2205",
+        "description": "Granola Bars Oat Honey",
+        "quantity": 6,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 20.4,
+        "line_total": 122.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "SN-2206",
+        "description": "Granola Bars Chocolate Chip",
+        "quantity": 10,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 20.4,
+        "line_total": 204,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "SN-2205",
+        "description": "Granola Bars Oat Honey",
+        "quantity": 6,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 20.4,
+        "line_total": 122.4,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 448.8,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": 448.8,
+    "warnings": []
+  }
+}

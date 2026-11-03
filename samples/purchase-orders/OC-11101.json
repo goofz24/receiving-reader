@@ -1,0 +1,28 @@
+{
+  "po_number": "OC-11101",
+  "supplier_name": "Distribuidora La Ceiba",
+  "order_date": "2026-11-02",
+  "lines": [
+    {
+      "sku": "LC-CAF-14",
+      "description": "Café molido 14 oz, caja de 12",
+      "quantity_ordered": 6,
+      "unit": "CJ",
+      "unit_price": 58.8
+    },
+    {
+      "sku": "LC-AZU-04",
+      "description": "Azúcar refinada 4 lb, caja de 10",
+      "quantity_ordered": 4,
+      "unit": "CJ",
+      "unit_price": 29.5
+    },
+    {
+      "sku": "LC-ARZ-03",
+      "description": "Arroz grano largo 3 lb, caja de 12",
+      "quantity_ordered": 8,
+      "unit": "CJ",
+      "unit_price": 21.6
+    }
+  ]
+}

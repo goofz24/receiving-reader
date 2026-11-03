@@ -1,0 +1,62 @@
+{
+  "id": "07-packing-slip-short",
+  "file": "07-packing-slip-short.pdf",
+  "title": "Short-shipped packing slip",
+  "tests": "Supplier sent 18 of the 24 ordered with no back-order note. Must be flagged against the PO.",
+  "expected_flags": [
+    "qty_short"
+  ],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Harborline Janitorial Supply",
+    "document_number": "PKG-30951",
+    "document_date": "2026-10-23",
+    "po_number": "PO-11072",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "HJ-2201",
+        "description": "All-Purpose Cleaner Concentrate 1 Gal",
+        "quantity": 18,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-6620",
+        "description": "Glass Cleaner Spray 32oz",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-7301",
+        "description": "Wet Floor Sign Bilingual",
+        "quantity": 2,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "02-packing-slip-basic",
+  "file": "02-packing-slip-basic.pdf",
+  "title": "Simple packing slip",
+  "tests": "Packing slip with no prices. Ordered and shipped columns agree.",
+  "expected_flags": [],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Tri-Point Hardware Distributors",
+    "document_number": "PS-55120",
+    "document_date": "2026-10-16",
+    "po_number": "PO-11051",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "TP-10-332",
+        "description": "Wood Screws #8 x 1-1/4\"",
+        "quantity": 20,
+        "unit": "BX",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-22-108",
+        "description": "Duct Tape Silver 2in",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-41-900",
+        "description": "Extension Cord 25ft Outdoor",
+        "quantity": 6,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-07-215",
+        "description": "Utility Knife Retractable",
+        "quantity": 12,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

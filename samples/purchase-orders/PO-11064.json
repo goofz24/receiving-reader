@@ -1,0 +1,35 @@
+{
+  "po_number": "PO-11064",
+  "supplier_name": "Coastal Electric Parts",
+  "order_date": "2026-10-21",
+  "lines": [
+    {
+      "sku": "CE-BRK-20",
+      "description": "CIRCUIT BREAKER 20A 1P",
+      "quantity_ordered": 10,
+      "unit": "EA",
+      "unit_price": 8.75
+    },
+    {
+      "sku": "CE-OUT-15W",
+      "description": "DUPLEX OUTLET 15A WHITE",
+      "quantity_ordered": 25,
+      "unit": "EA",
+      "unit_price": 1.89
+    },
+    {
+      "sku": "CE-WN-YEL",
+      "description": "WIRE NUTS YELLOW",
+      "quantity_ordered": 4,
+      "unit": "BG",
+      "unit_price": 6.4
+    },
+    {
+      "sku": "CE-LED-9W",
+      "description": "LED BULB A19 9W 5000K",
+      "quantity_ordered": 36,
+      "unit": "EA",
+      "unit_price": 2.15
+    }
+  ]
+}

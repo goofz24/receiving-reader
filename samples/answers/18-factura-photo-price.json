@@ -1,0 +1,62 @@
+{
+  "id": "18-factura-photo-price",
+  "file": "18-factura-photo-price.jpg",
+  "title": "Photo of a Spanish invoice billed above the PO price",
+  "tests": "Phone photo, Spanish. Coffee billed at $62.40 a case when the PO says $58.80.",
+  "expected_flags": [
+    "price_mismatch"
+  ],
+  "answer": {
+    "document_type": "invoice",
+    "language": "es",
+    "supplier_name": "Distribuidora La Ceiba",
+    "document_number": "F-0012603",
+    "document_date": "2026-11-02",
+    "po_number": "OC-11101",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "LC-CAF-14",
+        "description": "Café molido 14 oz, caja de 12",
+        "quantity": 6,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 62.4,
+        "line_total": 374.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-AZU-04",
+        "description": "Azúcar refinada 4 lb, caja de 10",
+        "quantity": 4,
+        "unit": "CJ",
+        "pack_size": 10,
+        "quantity_backordered": null,
+        "unit_price": 29.5,
+        "line_total": 118,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-ARZ-03",
+        "description": "Arroz grano largo 3 lb, caja de 12",
+        "quantity": 8,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 21.6,
+        "line_total": 172.8,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 665.2,
+    "discount": null,
+    "shipping": null,
+    "tax": 76.5,
+    "total": 741.7,
+    "warnings": []
+  }
+}

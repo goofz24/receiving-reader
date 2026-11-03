@@ -1,0 +1,35 @@
+{
+  "po_number": "PO-11060",
+  "supplier_name": "Summit Snack Wholesale",
+  "order_date": "2026-10-20",
+  "lines": [
+    {
+      "sku": "SN-1001",
+      "description": "Plantain Chips Lightly Salted 5oz",
+      "quantity_ordered": 12,
+      "unit": "CS",
+      "unit_price": 18.5
+    },
+    {
+      "sku": "SN-1002",
+      "description": "Plantain Chips Garlic 5oz",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": 18.5
+    },
+    {
+      "sku": "SN-1140",
+      "description": "Guava Pastry Bites 8oz",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 26.4
+    },
+    {
+      "sku": "SN-1205",
+      "description": "Roasted Peanuts Salted 6oz",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 15.75
+    }
+  ]
+}

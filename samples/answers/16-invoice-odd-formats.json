@@ -1,0 +1,48 @@
+{
+  "id": "16-invoice-odd-formats",
+  "file": "16-invoice-odd-formats.pdf",
+  "title": "Invoice with unusual date and PO formats",
+  "tests": "Date printed as 07-OCT-26 and PO as 'PO# 4500-0193' while the store's system stores 45000193.",
+  "expected_flags": [],
+  "answer": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Bluewater Paper & Packaging",
+    "document_number": "BW-0093288",
+    "document_date": "2026-10-07",
+    "po_number": "4500-0193",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "BW-PT-800",
+        "description": "PAPER TOWEL ROLLS KITCHEN",
+        "quantity": 4,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 32.9,
+        "line_total": 131.6,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-FL-18",
+        "description": "ALUMINUM FOIL ROLL 18IN",
+        "quantity": 2,
+        "unit": "RL",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 21.4,
+        "line_total": 42.8,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 174.4,
+    "discount": null,
+    "shipping": 18.5,
+    "tax": null,
+    "total": 192.9,
+    "warnings": []
+  }
+}

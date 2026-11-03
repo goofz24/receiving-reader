@@ -1,0 +1,63 @@
+{
+  "id": "13-packing-slip-hand-correction",
+  "file": "13-packing-slip-hand-correction.jpg",
+  "title": "Packing slip with a hand correction",
+  "tests": "The 10 printed on one line is crossed out and 8 written by hand. Reader must use 8 and mark it low confidence.",
+  "expected_flags": [
+    "qty_short",
+    "low_confidence"
+  ],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Tri-Point Hardware Distributors",
+    "document_number": "PS-55243",
+    "document_date": "2026-10-30",
+    "po_number": "PO-11093",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "TP-60-115",
+        "description": "Paint Roller Kit 9in",
+        "quantity": 8,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "low",
+        "note": null
+      },
+      {
+        "sku": "TP-60-220",
+        "description": "Painter's Tape Blue 1.88in",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-60-301",
+        "description": "Drop Cloth Canvas 9x12",
+        "quantity": 6,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

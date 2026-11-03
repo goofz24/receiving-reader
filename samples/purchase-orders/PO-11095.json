@@ -1,0 +1,28 @@
+{
+  "po_number": "PO-11095",
+  "supplier_name": "Coastal Electric Parts",
+  "order_date": "2026-10-30",
+  "lines": [
+    {
+      "sku": "CE-LED-9W",
+      "description": "LED BULB A19 9W 5000K",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "CE-LED-10W",
+      "description": "LED BULB A19 10W 5000K",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": null
+    },
+    {
+      "sku": "CE-SW-1P",
+      "description": "TOGGLE SWITCH 1-POLE WHITE",
+      "quantity_ordered": 20,
+      "unit": "EA",
+      "unit_price": null
+    }
+  ]
+}

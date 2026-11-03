@@ -1,0 +1,28 @@
+{
+  "po_number": "PO-11090",
+  "supplier_name": "Harborline Janitorial Supply",
+  "order_date": "2026-10-29",
+  "lines": [
+    {
+      "sku": "HJ-6620",
+      "description": "Glass Cleaner Spray 32oz",
+      "quantity_ordered": 36,
+      "unit": "EA",
+      "unit_price": 3.9
+    },
+    {
+      "sku": "HJ-6702",
+      "description": "Disinfectant Wipes Canister",
+      "quantity_ordered": 24,
+      "unit": "EA",
+      "unit_price": 5.25
+    },
+    {
+      "sku": "HJ-0870",
+      "description": "Nitrile Gloves Large",
+      "quantity_ordered": 500,
+      "unit": "EA",
+      "unit_price": 0.12
+    }
+  ]
+}

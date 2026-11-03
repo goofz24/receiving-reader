@@ -1,0 +1,35 @@
+{
+  "po_number": "PO-11033",
+  "supplier_name": "Bluewater Paper & Packaging",
+  "order_date": "2026-10-09",
+  "lines": [
+    {
+      "sku": "BW-PT-800",
+      "description": "Paper Towel Rolls Kitchen",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 32.9
+    },
+    {
+      "sku": "BW-TT-450",
+      "description": "Toilet Tissue 2-Ply",
+      "quantity_ordered": 12,
+      "unit": "CS",
+      "unit_price": 41.5
+    },
+    {
+      "sku": "BW-BG-120",
+      "description": "Kraft Grocery Bags #12",
+      "quantity_ordered": 5,
+      "unit": "BDL",
+      "unit_price": 27
+    },
+    {
+      "sku": "BW-NP-300",
+      "description": "Dinner Napkins White",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 24.75
+    }
+  ]
+}

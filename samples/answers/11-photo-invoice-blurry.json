@@ -1,0 +1,60 @@
+{
+  "id": "11-photo-invoice-blurry",
+  "file": "11-photo-invoice-blurry.jpg",
+  "title": "Blurry phone photo of an invoice",
+  "tests": "Lower-quality photo, more tilt and blur. Tests how reading holds up on bad input.",
+  "expected_flags": [],
+  "answer": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Coastal Electric Parts",
+    "document_number": "448377",
+    "document_date": "2026-10-28",
+    "po_number": "PO-11086",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "CE-EXT-6",
+        "description": "POWER STRIP 6 OUTLET",
+        "quantity": 12,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 7.95,
+        "line_total": 95.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-BAT-AA",
+        "description": "ALKALINE BATTERY AA",
+        "quantity": 20,
+        "unit": "PK",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 5.6,
+        "line_total": 112,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-BAT-9V",
+        "description": "ALKALINE BATTERY 9V",
+        "quantity": 10,
+        "unit": "PK",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 4.85,
+        "line_total": 48.5,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 255.9,
+    "discount": null,
+    "shipping": null,
+    "tax": 29.43,
+    "total": 285.33,
+    "warnings": []
+  }
+}

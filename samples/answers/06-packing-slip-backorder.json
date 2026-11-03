@@ -1,0 +1,74 @@
+{
+  "id": "06-packing-slip-backorder",
+  "file": "06-packing-slip-backorder.pdf",
+  "title": "Packing slip with back-orders",
+  "tests": "Ordered / shipped / back-ordered columns. Reader must take shipped, not ordered.",
+  "expected_flags": [
+    "backordered"
+  ],
+  "answer": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Tri-Point Hardware Distributors",
+    "document_number": "PS-55187",
+    "document_date": "2026-10-22",
+    "po_number": "PO-11070",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "TP-31-440",
+        "description": "Garden Hose 50ft",
+        "quantity": 6,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": 4,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-12-010",
+        "description": "Work Gloves Leather L",
+        "quantity": 24,
+        "unit": "PR",
+        "pack_size": null,
+        "quantity_backordered": 0,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-55-702",
+        "description": "LED Flashlight AA",
+        "quantity": 0,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": 12,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-18-330",
+        "description": "Zip Ties 8in Black",
+        "quantity": 15,
+        "unit": "PK",
+        "pack_size": null,
+        "quantity_backordered": 0,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "discount": null,
+    "shipping": null,
+    "tax": null,
+    "total": null,
+    "warnings": []
+  }
+}

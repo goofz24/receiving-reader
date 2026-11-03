@@ -1,0 +1,42 @@
+{
+  "po_number": "OC-11045",
+  "supplier_name": "Distribuidora La Ceiba",
+  "order_date": "2026-10-15",
+  "lines": [
+    {
+      "sku": "LC-ARZ-03",
+      "description": "Arroz grano largo 3 lb, caja de 12",
+      "quantity_ordered": 10,
+      "unit": "CJ",
+      "unit_price": 21.6
+    },
+    {
+      "sku": "LC-HBR-16",
+      "description": "Habichuelas rosadas 16 oz, caja de 24",
+      "quantity_ordered": 6,
+      "unit": "CJ",
+      "unit_price": 26.4
+    },
+    {
+      "sku": "LC-ACE-48",
+      "description": "Aceite vegetal 48 oz, caja de 9",
+      "quantity_ordered": 4,
+      "unit": "CJ",
+      "unit_price": 36
+    },
+    {
+      "sku": "LC-CAF-14",
+      "description": "Café molido 14 oz, caja de 12",
+      "quantity_ordered": 5,
+      "unit": "CJ",
+      "unit_price": 58.8
+    },
+    {
+      "sku": "LC-SAL-26",
+      "description": "Sal yodada 26 oz, caja de 24",
+      "quantity_ordered": 2,
+      "unit": "CJ",
+      "unit_price": 16.8
+    }
+  ]
+}

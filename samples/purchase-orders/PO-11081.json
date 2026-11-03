@@ -1,0 +1,203 @@
+{
+  "po_number": "PO-11081",
+  "supplier_name": "Summit Snack Wholesale",
+  "order_date": "2026-10-27",
+  "lines": [
+    {
+      "sku": "SN-1001",
+      "description": "Plantain Chips Lightly Salted 5oz",
+      "quantity_ordered": 12,
+      "unit": "CS",
+      "unit_price": 18.5
+    },
+    {
+      "sku": "SN-1002",
+      "description": "Plantain Chips Garlic 5oz",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": 18.5
+    },
+    {
+      "sku": "SN-1140",
+      "description": "Guava Pastry Bites 8oz",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 26.4
+    },
+    {
+      "sku": "SN-1205",
+      "description": "Roasted Peanuts Salted 6oz",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 15.75
+    },
+    {
+      "sku": "SN-1310",
+      "description": "Coconut Candy Bars",
+      "quantity_ordered": 4,
+      "unit": "CS",
+      "unit_price": 21
+    },
+    {
+      "sku": "SN-1402",
+      "description": "Cheese Puffs Family Size",
+      "quantity_ordered": 9,
+      "unit": "CS",
+      "unit_price": 23.9
+    },
+    {
+      "sku": "SN-1403",
+      "description": "Cheese Puffs Snack Size",
+      "quantity_ordered": 5,
+      "unit": "CS",
+      "unit_price": 19.6
+    },
+    {
+      "sku": "SN-1520",
+      "description": "Trail Mix Tropical",
+      "quantity_ordered": 3,
+      "unit": "CS",
+      "unit_price": 31.2
+    },
+    {
+      "sku": "SN-1601",
+      "description": "Butter Cookies Tin",
+      "quantity_ordered": 4,
+      "unit": "CS",
+      "unit_price": 28.8
+    },
+    {
+      "sku": "SN-1602",
+      "description": "Vanilla Wafers",
+      "quantity_ordered": 7,
+      "unit": "CS",
+      "unit_price": 16.45
+    },
+    {
+      "sku": "SN-1710",
+      "description": "Mango Fruit Leather",
+      "quantity_ordered": 5,
+      "unit": "CS",
+      "unit_price": 22.1
+    },
+    {
+      "sku": "SN-1711",
+      "description": "Pineapple Fruit Leather",
+      "quantity_ordered": 5,
+      "unit": "CS",
+      "unit_price": 22.1
+    },
+    {
+      "sku": "SN-1805",
+      "description": "Sesame Sticks Honey",
+      "quantity_ordered": 2,
+      "unit": "CS",
+      "unit_price": 17.3
+    },
+    {
+      "sku": "SN-1902",
+      "description": "Pretzel Rods Classic",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 14.95
+    },
+    {
+      "sku": "SN-2001",
+      "description": "Popcorn Kettle Corn",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": 19.2
+    },
+    {
+      "sku": "SN-2002",
+      "description": "Popcorn White Cheddar",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": 19.2
+    },
+    {
+      "sku": "SN-2110",
+      "description": "Rice Crackers Seaweed",
+      "quantity_ordered": 3,
+      "unit": "CS",
+      "unit_price": 24.6
+    },
+    {
+      "sku": "SN-2205",
+      "description": "Granola Bars Oat Honey",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 20.4
+    },
+    {
+      "sku": "SN-2206",
+      "description": "Granola Bars Chocolate Chip",
+      "quantity_ordered": 10,
+      "unit": "CS",
+      "unit_price": 20.4
+    },
+    {
+      "sku": "SN-2301",
+      "description": "Beef Jerky Original",
+      "quantity_ordered": 2,
+      "unit": "CS",
+      "unit_price": 54
+    },
+    {
+      "sku": "SN-2302",
+      "description": "Beef Jerky Teriyaki",
+      "quantity_ordered": 2,
+      "unit": "CS",
+      "unit_price": 54
+    },
+    {
+      "sku": "SN-2410",
+      "description": "Mixed Nuts Deluxe",
+      "quantity_ordered": 3,
+      "unit": "CS",
+      "unit_price": 48.75
+    },
+    {
+      "sku": "SN-2505",
+      "description": "Sunflower Seeds Ranch",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 13.8
+    },
+    {
+      "sku": "SN-2506",
+      "description": "Sunflower Seeds Original",
+      "quantity_ordered": 6,
+      "unit": "CS",
+      "unit_price": 13.8
+    },
+    {
+      "sku": "SN-2620",
+      "description": "Animal Crackers Bulk",
+      "quantity_ordered": 4,
+      "unit": "CS",
+      "unit_price": 18.9
+    },
+    {
+      "sku": "SN-2701",
+      "description": "Corn Nuts Chile Picante",
+      "quantity_ordered": 5,
+      "unit": "CS",
+      "unit_price": 15.4
+    },
+    {
+      "sku": "SN-2802",
+      "description": "Dried Pineapple Rings",
+      "quantity_ordered": 3,
+      "unit": "CS",
+      "unit_price": 33.6
+    },
+    {
+      "sku": "SN-2903",
+      "description": "Chocolate Covered Almonds",
+      "quantity_ordered": 2,
+      "unit": "CS",
+      "unit_price": 41.25
+    }
+  ]
+}

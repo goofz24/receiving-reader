@@ -1,0 +1,42 @@
+{
+  "po_number": "PO-11075",
+  "supplier_name": "Bluewater Paper & Packaging",
+  "order_date": "2026-10-24",
+  "lines": [
+    {
+      "sku": "BW-CUP-12",
+      "description": "Hot Cups 12oz Paper",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "sku": "BW-LID-12",
+      "description": "Hot Cup Lids 12oz",
+      "quantity_ordered": 8,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "sku": "BW-STR-07",
+      "description": "Wrapped Straws 7.75in",
+      "quantity_ordered": 3,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "sku": "BW-CLM-96",
+      "description": "Clamshell Containers 9x6",
+      "quantity_ordered": 5,
+      "unit": "CS",
+      "unit_price": null
+    },
+    {
+      "sku": "BW-FL-12",
+      "description": "Aluminum Foil Roll 12in",
+      "quantity_ordered": 6,
+      "unit": "RL",
+      "unit_price": null
+    }
+  ]
+}

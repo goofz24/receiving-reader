@@ -1,0 +1,28 @@
+{
+  "po_number": "PO-11086",
+  "supplier_name": "Coastal Electric Parts",
+  "order_date": "2026-10-28",
+  "lines": [
+    {
+      "sku": "CE-EXT-6",
+      "description": "POWER STRIP 6 OUTLET",
+      "quantity_ordered": 12,
+      "unit": "EA",
+      "unit_price": 7.95
+    },
+    {
+      "sku": "CE-BAT-AA",
+      "description": "ALKALINE BATTERY AA",
+      "quantity_ordered": 20,
+      "unit": "PK",
+      "unit_price": 5.6
+    },
+    {
+      "sku": "CE-BAT-9V",
+      "description": "ALKALINE BATTERY 9V",
+      "quantity_ordered": 10,
+      "unit": "PK",
+      "unit_price": 4.85
+    }
+  ]
+}
