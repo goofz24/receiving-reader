@@ -6,7 +6,7 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
-import { Extraction } from "../src/shared/schema";
+import { Extraction, ExtractionForApi, fromApi } from "../src/shared/schema";
 import { SYSTEM_PROMPT, USER_PROMPT } from "./prompt";
 
 // Haiku 5.5 is the default because it costs about 1/40 of Opus 5.5 per document
@@ -82,7 +82,9 @@ export async function extractDocument(
       messages: [{ role: "user", content: buildContent(data, mediaType) }],
       // Structured outputs: the API makes the model answer in the schema's exact shape,
       // and the SDK checks it again with Zod and puts the result in parsed_output.
-      output_config: { format: betaZodOutputFormat(Extraction), effort: options.effort ?? "medium" },
+      // ExtractionForApi uses optional fields instead of nullable ones to stay inside
+      // the API's limit on "type or null" fields (see src/shared/schema.ts).
+      output_config: { format: betaZodOutputFormat(ExtractionForApi), effort: options.effort ?? "medium" },
       // If a safety check declines the request, let the API retry it on a fallback model.
       betas: ["server-side-fallback-2026-07-01"],
       fallbacks: "default",
@@ -106,10 +108,17 @@ export async function extractDocument(
     throw new ExtractionError("The answer did not match the expected format. Try again or enter it by hand.");
   }
 
+  let extraction: Extraction;
+  try {
+    extraction = fromApi(response.parsed_output);
+  } catch {
+    throw new ExtractionError("The answer did not match the expected format. Try again or enter it by hand.");
+  }
+
   const inputTokens = response.usage.input_tokens;
   const outputTokens = response.usage.output_tokens;
   return {
-    extraction: response.parsed_output,
+    extraction,
     model: response.model,
     inputTokens,
     outputTokens,
