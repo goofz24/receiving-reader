@@ -1,0 +1,7 @@
+# Keep LF line endings on every OS (Prettier checks for LF; Windows git would otherwise write CRLF).
+* text=auto eol=lf
+*.pdf binary
+*.jpg binary
+*.png binary
+*.ttf binary
+*.zip binary

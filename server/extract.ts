@@ -82,8 +82,8 @@ export async function extractDocument(
       messages: [{ role: "user", content: buildContent(data, mediaType) }],
       // Structured outputs: the API makes the model answer in the schema's exact shape,
       // and the SDK checks it again with Zod and puts the result in parsed_output.
-      // ExtractionForApi uses optional fields instead of nullable ones to stay inside
-      // the API's limit on "type or null" fields (see src/shared/schema.ts).
+      // ExtractionForApi is a simpler copy (all fields required, numbers as text) so the
+      // API can compile it quickly; fromApi() turns it back (see src/shared/schema.ts).
       output_config: { format: betaZodOutputFormat(ExtractionForApi), effort: options.effort ?? "medium" },
       // If a safety check declines the request, let the API retry it on a fallback model.
       betas: ["server-side-fallback-2026-07-01"],
