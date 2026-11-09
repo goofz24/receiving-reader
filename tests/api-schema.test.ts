@@ -43,6 +43,16 @@ describe("schema sent to the Claude API", () => {
     expect(optional).toBe(18);
   });
 
+  it("sends the fixed choices as real enums, so the API enforces them", () => {
+    // @anthropic-ai/sdk 1.4.0 turned enums into plain text, so the model could answer
+    // anything and the answer failed our own check afterwards. Fixed in 1.7.0.
+    const props = sent.properties as Record<string, Node>;
+    expect(props.document_type.enum).toEqual(["packing_slip", "invoice", "other"]);
+    expect(props.language.enum).toEqual(["en", "es", "mixed"]);
+    const line = (props.line_items.items as Node).properties as Record<string, Node>;
+    expect(line.confidence.enum).toEqual(["high", "medium", "low"]);
+  });
+
   it("keeps the field descriptions", () => {
     const text = JSON.stringify(sent);
     expect(text).toContain("crossed out a number");
