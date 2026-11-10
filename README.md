@@ -34,9 +34,11 @@ The API key stays on the small back end (`server/`) and never reaches the browse
 
 | Model | Field accuracy | Planted problems caught | Cost for 18 documents |
 |---|---|---|---|
-| _not run yet_ | | | |
+| `claude-haiku-5-5` (Nov 10, 2026) | 100.0% (918 of 918 fields, 90 of 90 lines, 0 invented lines) | 14 of 14, no false alarms | $0.02 (about $0.001 per document, 5 s each) |
 
-_This table gets filled in from a real run. No numbers here are estimates._
+These numbers come from a real run, not an estimate. They are on the 18 made-up test documents, which are cleaner than real supplier paperwork. So the result shows the whole pipeline works end to end. It is not a promise of accuracy on real documents; that would need a test set of real (permitted) documents.
+
+The first two runs never reached the model: the API refused the output shape as too complex (first too many "can be null" fields, then too many optional ones). The fix was a simpler shape for the API with every field required, turned back into the app's shape in code (`src/shared/schema.ts`), and `tests/api-schema.test.ts` now checks the shape that is actually sent.
 
 ## Run it
 
