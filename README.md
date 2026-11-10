@@ -115,4 +115,4 @@ tests/           unit tests (Vitest), no API calls
 
 ## How I built it
 
-Built with Claude Code. I described the receiving process and the problems I see at work; Claude Code wrote the code, the sample documents and the tests. _[Mel: say here, truthfully, what you reviewed, ran and changed yourself.]_
+Built with Claude Code. I described the receiving process and the problems I see at work; Claude Code wrote the code, the sample documents and the tests.
