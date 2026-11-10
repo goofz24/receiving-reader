@@ -1,0 +1,74 @@
+{
+  "id": "04-invoice-line-math-error",
+  "at": "2026-11-10T00:00:08.275Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Summit Snack Wholesale",
+    "document_number": "SSW-77120",
+    "document_date": "2026-10-20",
+    "po_number": "PO-11060",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "SN-1001",
+        "description": "Plantain Chips Lightly Salted 5oz",
+        "quantity": 12,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 18.5,
+        "line_total": 228,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "SN-1002",
+        "description": "Plantain Chips Garlic 5oz",
+        "quantity": 8,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 18.5,
+        "line_total": 148,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "SN-1140",
+        "description": "Guava Pastry Bites 8oz",
+        "quantity": 6,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 26.4,
+        "line_total": 158.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "SN-1205",
+        "description": "Roasted Peanuts Salted 6oz",
+        "quantity": 10,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 15.75,
+        "line_total": 157.5,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 691.9,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": 691.9,
+    "warnings": []
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5114,
+  "outputTokens": 827,
+  "costUsd": 0.0009249000000000001,
+  "seconds": 4.196
+}

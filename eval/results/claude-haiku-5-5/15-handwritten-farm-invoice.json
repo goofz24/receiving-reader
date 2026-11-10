@@ -1,0 +1,78 @@
+{
+  "id": "15-handwritten-farm-invoice",
+  "at": "2026-11-10T00:01:09.151Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "es",
+    "supplier_name": "Finca Los Pinos",
+    "document_number": "0347",
+    "document_date": "2026-10-31",
+    "po_number": null,
+    "currency": null,
+    "line_items": [
+      {
+        "sku": null,
+        "description": "Guineos verdes",
+        "quantity": 40,
+        "unit": "LB",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 0.85,
+        "line_total": 34,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": null,
+        "description": "Plátanos",
+        "quantity": 60,
+        "unit": "UN",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 0.6,
+        "line_total": 36,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": null,
+        "description": "Aguacates",
+        "quantity": 24,
+        "unit": "UN",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 1.5,
+        "line_total": 36,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": null,
+        "description": "Café en grano",
+        "quantity": 10,
+        "unit": "LB",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 9,
+        "line_total": 90,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 196,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": 196,
+    "warnings": [
+      "Currency is not printed as an ISO code; the document shows only the $ sign.",
+      "No tax, shipping or discount lines are printed on this invoice.",
+      "Terms are 30 days; no PO number is printed."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5379,
+  "outputTokens": 1013,
+  "costUsd": 0.0010444,
+  "seconds": 4.884
+}

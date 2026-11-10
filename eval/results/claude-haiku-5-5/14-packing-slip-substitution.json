@@ -1,0 +1,65 @@
+{
+  "id": "14-packing-slip-substitution",
+  "at": "2026-11-10T00:01:04.263Z",
+  "extraction": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Coastal Electric Parts",
+    "document_number": "PL-448402",
+    "document_date": "2026-10-30",
+    "po_number": "PO-11095",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "CE-LED-9W",
+        "description": "LED BULB A19 9W 5000K",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-LED-11W",
+        "description": "LED BULB A19 11W 5000K",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": "Printed under the description: SUB FOR CE-LED-10W (DISC), i.e. substitute for a discontinued item."
+      },
+      {
+        "sku": "CE-SW-1P",
+        "description": "TOGGLE SWITCH 1-POLE WHITE",
+        "quantity": 20,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": null,
+    "warnings": [
+      "Packing slip has no prices or totals; price, amount and total fields are left blank.",
+      "Date printed as 10/30/26 (US month/day order); read as 2026-10-30."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5092,
+  "outputTokens": 995,
+  "costUsd": 0.0010067000000000001,
+  "seconds": 4.718
+}

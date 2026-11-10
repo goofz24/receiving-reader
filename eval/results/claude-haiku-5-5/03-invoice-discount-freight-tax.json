@@ -1,0 +1,74 @@
+{
+  "id": "03-invoice-discount-freight-tax",
+  "at": "2026-11-10T00:00:04.075Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Bluewater Paper & Packaging",
+    "document_number": "BW-0093317",
+    "document_date": "2026-10-09",
+    "po_number": "PO-11033",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "BW-PT-800",
+        "description": "Paper Towel Rolls Kitchen",
+        "quantity": 10,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 32.9,
+        "line_total": 329,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-TT-450",
+        "description": "Toilet Tissue 2-Ply",
+        "quantity": 12,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 41.5,
+        "line_total": 498,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-BG-120",
+        "description": "Kraft Grocery Bags #12",
+        "quantity": 5,
+        "unit": "BDL",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 27,
+        "line_total": 135,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-NP-300",
+        "description": "Dinner Napkins White",
+        "quantity": 6,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 24.75,
+        "line_total": 148.5,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 1110.5,
+    "tax": 77.74,
+    "shipping": 45,
+    "discount": 22.6,
+    "total": 1210.64,
+    "warnings": []
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5127,
+  "outputTokens": 1013,
+  "costUsd": 0.0010192,
+  "seconds": 5.24
+}

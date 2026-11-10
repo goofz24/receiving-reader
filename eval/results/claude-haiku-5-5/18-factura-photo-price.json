@@ -1,0 +1,65 @@
+{
+  "id": "18-factura-photo-price",
+  "at": "2026-11-10T00:01:24.274Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "es",
+    "supplier_name": "Distribuidora La Ceiba",
+    "document_number": "F-0012603",
+    "document_date": "2026-11-02",
+    "po_number": "OC-11101",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "LC-CAF-14",
+        "description": "Café molido 14 oz, caja de 12",
+        "quantity": 6,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 62.4,
+        "line_total": 374.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-AZU-04",
+        "description": "Azúcar refinada 4 lb, caja de 10",
+        "quantity": 4,
+        "unit": "CJ",
+        "pack_size": 10,
+        "quantity_backordered": null,
+        "unit_price": 29.5,
+        "line_total": 118,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-ARZ-03",
+        "description": "Arroz grano largo 3 lb, caja de 12",
+        "quantity": 8,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 21.6,
+        "line_total": 172.8,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 665.2,
+    "tax": 76.5,
+    "shipping": null,
+    "discount": null,
+    "total": 741.7,
+    "warnings": [
+      "Invoice date 02/11/2026 was read as day/month (2 November 2026); the day and month order is unclear, so please verify against the paper.",
+      "Currency is shown only as $ with no ISO code printed; currency left blank."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5065,
+  "outputTokens": 1176,
+  "costUsd": 0.0010945,
+  "seconds": 5.424
+}

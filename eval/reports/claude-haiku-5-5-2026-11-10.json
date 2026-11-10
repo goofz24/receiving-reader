@@ -1,0 +1,6842 @@
+{
+  "label": "claude-haiku-5-5",
+  "model": "claude-haiku-5-5",
+  "summary": {
+    "documents": 18,
+    "fieldAccuracy": 1,
+    "correct": 918,
+    "total": 918,
+    "linesExpected": 90,
+    "linesMatched": 90,
+    "extraLines": 0,
+    "flagsExpected": 14,
+    "flagsCaught": 14,
+    "falseAlarmDocs": 0,
+    "byField": [
+      {
+        "field": "description",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "discount",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "document_date",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "document_number",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "document_type",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "language",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "line_total",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "pack_size",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "po_number",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "quantity",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "quantity_backordered",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "shipping",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "sku",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "subtotal",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "supplier_name",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "tax",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "total",
+        "correct": 18,
+        "total": 18,
+        "accuracy": 1
+      },
+      {
+        "field": "unit",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      },
+      {
+        "field": "unit_price",
+        "correct": 90,
+        "total": 90,
+        "accuracy": 1
+      }
+    ]
+  },
+  "documents": [
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Harborline Janitorial Supply",
+          "got": "Harborline Janitorial Supply",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "INV-208841",
+          "got": "INV-208841",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-14",
+          "got": "2026-10-14",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11042",
+          "got": "PO-11042",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 542.2,
+          "got": 542.2,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 542.2,
+          "got": 542.2,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "HJ-4410",
+          "got": "HJ-4410",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Trash Can Liners 33 Gal Black",
+          "got": "Trash Can Liners 33 Gal Black",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 38.4,
+          "got": 38.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 230.4,
+          "got": 230.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "HJ-2201",
+          "got": "HJ-2201",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "All-Purpose Cleaner Concentrate 1 Gal",
+          "got": "All-Purpose Cleaner Concentrate 1 Gal",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 9.85,
+          "got": 9.85,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 118.2,
+          "got": 118.2,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "HJ-3105",
+          "got": "HJ-3105",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Microfiber Cloths Blue",
+          "got": "Microfiber Cloths Blue",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "PK",
+          "got": "PK",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 7.2,
+          "got": 7.2,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 72,
+          "got": 72,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "HJ-0870",
+          "got": "HJ-0870",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Nitrile Gloves Large",
+          "got": "Nitrile Gloves Large",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "BX",
+          "got": "BX",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 11.95,
+          "got": 11.95,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 95.6,
+          "got": 95.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 5",
+          "expected": "HJ-5512",
+          "got": "HJ-5512",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 5",
+          "expected": "Floor Mop Head Cotton #24",
+          "got": "Floor Mop Head Cotton #24",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 5",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 5",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 5",
+          "expected": 6.5,
+          "got": 6.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 5",
+          "expected": 26,
+          "got": 26,
+          "ok": true
+        }
+      ],
+      "correct": 51,
+      "total": 51,
+      "linesExpected": 5,
+      "linesMatched": 5,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Tri-Point Hardware Distributors",
+          "got": "Tri-Point Hardware Distributors",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "PS-55120",
+          "got": "PS-55120",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-16",
+          "got": "2026-10-16",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11051",
+          "got": "PO-11051",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "TP-10-332",
+          "got": "TP-10-332",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Wood Screws #8 x 1-1/4\"",
+          "got": "Wood Screws #8 × 1-1/4\"",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 20,
+          "got": 20,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "BX",
+          "got": "BX",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "TP-22-108",
+          "got": "TP-22-108",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Duct Tape Silver 2in",
+          "got": "Duct Tape Silver 2in",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "TP-41-900",
+          "got": "TP-41-900",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Extension Cord 25ft Outdoor",
+          "got": "Extension Cord 25ft Outdoor",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "TP-07-215",
+          "got": "TP-07-215",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Utility Knife Retractable",
+          "got": "Utility Knife Retractable",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Bluewater Paper & Packaging",
+          "got": "Bluewater Paper & Packaging",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "BW-0093317",
+          "got": "BW-0093317",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-09",
+          "got": "2026-10-09",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11033",
+          "got": "PO-11033",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 1110.5,
+          "got": 1110.5,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": 77.74,
+          "got": 77.74,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": 45,
+          "got": 45,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": 22.6,
+          "got": 22.6,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 1210.64,
+          "got": 1210.64,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "BW-PT-800",
+          "got": "BW-PT-800",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Paper Towel Rolls Kitchen",
+          "got": "Paper Towel Rolls Kitchen",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 32.9,
+          "got": 32.9,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 329,
+          "got": 329,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "BW-TT-450",
+          "got": "BW-TT-450",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Toilet Tissue 2-Ply",
+          "got": "Toilet Tissue 2-Ply",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 41.5,
+          "got": 41.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 498,
+          "got": 498,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "BW-BG-120",
+          "got": "BW-BG-120",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Kraft Grocery Bags #12",
+          "got": "Kraft Grocery Bags #12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "BDL",
+          "got": "BDL",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 27,
+          "got": 27,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 135,
+          "got": 135,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "BW-NP-300",
+          "got": "BW-NP-300",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Dinner Napkins White",
+          "got": "Dinner Napkins White",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 24.75,
+          "got": 24.75,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 148.5,
+          "got": 148.5,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Summit Snack Wholesale",
+          "got": "Summit Snack Wholesale",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "SSW-77120",
+          "got": "SSW-77120",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-20",
+          "got": "2026-10-20",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11060",
+          "got": "PO-11060",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 691.9,
+          "got": 691.9,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 691.9,
+          "got": 691.9,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "SN-1001",
+          "got": "SN-1001",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Plantain Chips Lightly Salted 5oz",
+          "got": "Plantain Chips Lightly Salted 5oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 18.5,
+          "got": 18.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 228,
+          "got": 228,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "SN-1002",
+          "got": "SN-1002",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Plantain Chips Garlic 5oz",
+          "got": "Plantain Chips Garlic 5oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 18.5,
+          "got": 18.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 148,
+          "got": 148,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "SN-1140",
+          "got": "SN-1140",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Guava Pastry Bites 8oz",
+          "got": "Guava Pastry Bites 8oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 26.4,
+          "got": 26.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 158.4,
+          "got": 158.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "SN-1205",
+          "got": "SN-1205",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Roasted Peanuts Salted 6oz",
+          "got": "Roasted Peanuts Salted 6oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 15.75,
+          "got": 15.75,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 157.5,
+          "got": 157.5,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [
+        "line_math"
+      ],
+      "caughtFlags": [
+        "line_math"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Coastal Electric Parts",
+          "got": "Coastal Electric Parts",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "448120",
+          "got": "448120",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-21",
+          "got": "2026-10-21",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11064",
+          "got": "PO-11064",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 247.75,
+          "got": 247.75,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 247.75,
+          "got": 247.75,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "CE-BRK-20",
+          "got": "CE-BRK-20",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "CIRCUIT BREAKER 20A 1P",
+          "got": "CIRCUIT BREAKER 20A 1P",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 8.75,
+          "got": 8.75,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 87.5,
+          "got": 87.5,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "CE-OUT-15W",
+          "got": "CE-OUT-15W",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "DUPLEX OUTLET 15A WHITE",
+          "got": "DUPLEX OUTLET 15A WHITE",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 25,
+          "got": 25,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 1.89,
+          "got": 1.89,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 47.25,
+          "got": 47.25,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "CE-WN-YEL",
+          "got": "CE-WN-YEL",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "WIRE NUTS YELLOW",
+          "got": "WIRE NUTS YELLOW",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "BG",
+          "got": "BG",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 6.4,
+          "got": 6.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 25.6,
+          "got": 25.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "CE-LED-9W",
+          "got": "CE-LED-9W",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "LED BULB A19 9W 5000K",
+          "got": "LED BULB A19 9W 5000K",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 36,
+          "got": 36,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 2.15,
+          "got": 2.15,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 77.4,
+          "got": 77.4,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [
+        "subtotal_mismatch"
+      ],
+      "caughtFlags": [
+        "subtotal_mismatch"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Tri-Point Hardware Distributors",
+          "got": "Tri-Point Hardware Distributors",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "PS-55187",
+          "got": "PS-55187",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-22",
+          "got": "2026-10-22",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11070",
+          "got": "PO-11070",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "TP-31-440",
+          "got": "TP-31-440",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Garden Hose 50ft",
+          "got": "Garden Hose 50ft",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "TP-12-010",
+          "got": "TP-12-010",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Work Gloves Leather L",
+          "got": "Work Gloves Leather L",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "PR",
+          "got": "PR",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": 0,
+          "got": 0,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "TP-55-702",
+          "got": "TP-55-702",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "LED Flashlight AA",
+          "got": "LED Flashlight AA",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 0,
+          "got": 0,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "TP-18-330",
+          "got": "TP-18-330",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Zip Ties 8in Black",
+          "got": "Zip Ties 8in Black",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 15,
+          "got": 15,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "PK",
+          "got": "PK",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": 0,
+          "got": 0,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [
+        "backordered"
+      ],
+      "caughtFlags": [
+        "backordered"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Harborline Janitorial Supply",
+          "got": "Harborline Janitorial Supply",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "PKG-30951",
+          "got": "PKG-30951",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-23",
+          "got": "2026-10-23",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11072",
+          "got": "PO-11072",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "HJ-2201",
+          "got": "HJ-2201",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "All-Purpose Cleaner Concentrate 1 Gal",
+          "got": "All-Purpose Cleaner Concentrate 1 Gal",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 18,
+          "got": 18,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "HJ-6620",
+          "got": "HJ-6620",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Glass Cleaner Spray 32oz",
+          "got": "Glass Cleaner Spray 32oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "HJ-7301",
+          "got": "HJ-7301",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Wet Floor Sign Bilingual",
+          "got": "Wet Floor Sign Bilingual",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "qty_short"
+      ],
+      "caughtFlags": [
+        "qty_short"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "es",
+          "got": "es",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Distribuidora La Ceiba",
+          "got": "Distribuidora La Ceiba",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "F-0012457",
+          "got": "F-0012457",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-15",
+          "got": "2026-10-15",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "OC-11045",
+          "got": "OC-11045",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 846,
+          "got": 846,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": 97.29,
+          "got": 97.29,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 943.29,
+          "got": 943.29,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "LC-ARZ-03",
+          "got": "LC-ARZ-03",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Arroz grano largo 3 lb, caja de 12",
+          "got": "Arroz grano largo 3 lb, caja de 12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 21.6,
+          "got": 21.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 216,
+          "got": 216,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "LC-HBR-16",
+          "got": "LC-HBR-16",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Habichuelas rosadas 16 oz, caja de 24",
+          "got": "Habichuelas rosadas 16 oz, caja de 24",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 26.4,
+          "got": 26.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 158.4,
+          "got": 158.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "LC-ACE-48",
+          "got": "LC-ACE-48",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Aceite vegetal 48 oz, caja de 9",
+          "got": "Aceite vegetal 48 oz, caja de 9",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": 9,
+          "got": 9,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 36,
+          "got": 36,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 144,
+          "got": 144,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "LC-CAF-14",
+          "got": "LC-CAF-14",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Café molido 14 oz, caja de 12",
+          "got": "Café molido 14 oz, caja de 12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 58.8,
+          "got": 58.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 294,
+          "got": 294,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 5",
+          "expected": "LC-SAL-26",
+          "got": "LC-SAL-26",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 5",
+          "expected": "Sal yodada 26 oz, caja de 24",
+          "got": "Sal yodada 26 oz, caja de 24",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 5",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 5",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 5",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 5",
+          "expected": 16.8,
+          "got": 16.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 5",
+          "expected": 33.6,
+          "got": 33.6,
+          "ok": true
+        }
+      ],
+      "correct": 51,
+      "total": 51,
+      "linesExpected": 5,
+      "linesMatched": 5,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Summit Snack Wholesale",
+          "got": "Summit Snack Wholesale",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "SSW-77188",
+          "got": "SSW-77188",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-27",
+          "got": "2026-10-27",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11081",
+          "got": "PO-11081",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 3405,
+          "got": 3405,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": 85,
+          "got": 85,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 3490,
+          "got": 3490,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "SN-1001",
+          "got": "SN-1001",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Plantain Chips Lightly Salted 5oz",
+          "got": "Plantain Chips Lightly Salted 5oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 18.5,
+          "got": 18.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 222,
+          "got": 222,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "SN-1002",
+          "got": "SN-1002",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Plantain Chips Garlic 5oz",
+          "got": "Plantain Chips Garlic 5oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 18.5,
+          "got": 18.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 148,
+          "got": 148,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "SN-1140",
+          "got": "SN-1140",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Guava Pastry Bites 8oz",
+          "got": "Guava Pastry Bites 8oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 26.4,
+          "got": 26.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 158.4,
+          "got": 158.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "SN-1205",
+          "got": "SN-1205",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Roasted Peanuts Salted 6oz",
+          "got": "Roasted Peanuts Salted 6oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 15.75,
+          "got": 15.75,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 157.5,
+          "got": 157.5,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 5",
+          "expected": "SN-1310",
+          "got": "SN-1310",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 5",
+          "expected": "Coconut Candy Bars",
+          "got": "Coconut Candy Bars",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 5",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 5",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 5",
+          "expected": 21,
+          "got": 21,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 5",
+          "expected": 84,
+          "got": 84,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 6",
+          "expected": "SN-1402",
+          "got": "SN-1402",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 6",
+          "expected": "Cheese Puffs Family Size",
+          "got": "Cheese Puffs Family Size",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 6",
+          "expected": 9,
+          "got": 9,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 6",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 6",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 6",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 6",
+          "expected": 23.9,
+          "got": 23.9,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 6",
+          "expected": 215.1,
+          "got": 215.1,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 7",
+          "expected": "SN-1403",
+          "got": "SN-1403",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 7",
+          "expected": "Cheese Puffs Snack Size",
+          "got": "Cheese Puffs Snack Size",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 7",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 7",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 7",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 7",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 7",
+          "expected": 19.6,
+          "got": 19.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 7",
+          "expected": 98,
+          "got": 98,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 8",
+          "expected": "SN-1520",
+          "got": "SN-1520",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 8",
+          "expected": "Trail Mix Tropical",
+          "got": "Trail Mix Tropical",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 8",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 8",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 8",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 8",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 8",
+          "expected": 31.2,
+          "got": 31.2,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 8",
+          "expected": 93.6,
+          "got": 93.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 9",
+          "expected": "SN-1601",
+          "got": "SN-1601",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 9",
+          "expected": "Butter Cookies Tin",
+          "got": "Butter Cookies Tin",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 9",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 9",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 9",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 9",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 9",
+          "expected": 28.8,
+          "got": 28.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 9",
+          "expected": 115.2,
+          "got": 115.2,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 10",
+          "expected": "SN-1602",
+          "got": "SN-1602",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 10",
+          "expected": "Vanilla Wafers",
+          "got": "Vanilla Wafers",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 10",
+          "expected": 7,
+          "got": 7,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 10",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 10",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 10",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 10",
+          "expected": 16.45,
+          "got": 16.45,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 10",
+          "expected": 115.15,
+          "got": 115.15,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 11",
+          "expected": "SN-1710",
+          "got": "SN-1710",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 11",
+          "expected": "Mango Fruit Leather",
+          "got": "Mango Fruit Leather",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 11",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 11",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 11",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 11",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 11",
+          "expected": 22.1,
+          "got": 22.1,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 11",
+          "expected": 110.5,
+          "got": 110.5,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 12",
+          "expected": "SN-1711",
+          "got": "SN-1711",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 12",
+          "expected": "Pineapple Fruit Leather",
+          "got": "Pineapple Fruit Leather",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 12",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 12",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 12",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 12",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 12",
+          "expected": 22.1,
+          "got": 22.1,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 12",
+          "expected": 110.5,
+          "got": 110.5,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 13",
+          "expected": "SN-1805",
+          "got": "SN-1805",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 13",
+          "expected": "Sesame Sticks Honey",
+          "got": "Sesame Sticks Honey",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 13",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 13",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 13",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 13",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 13",
+          "expected": 17.3,
+          "got": 17.3,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 13",
+          "expected": 34.6,
+          "got": 34.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 14",
+          "expected": "SN-1902",
+          "got": "SN-1902",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 14",
+          "expected": "Pretzel Rods Classic",
+          "got": "Pretzel Rods Classic",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 14",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 14",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 14",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 14",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 14",
+          "expected": 14.95,
+          "got": 14.95,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 14",
+          "expected": 89.7,
+          "got": 89.7,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 15",
+          "expected": "SN-2001",
+          "got": "SN-2001",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 15",
+          "expected": "Popcorn Kettle Corn",
+          "got": "Popcorn Kettle Corn",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 15",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 15",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 15",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 15",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 15",
+          "expected": 19.2,
+          "got": 19.2,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 15",
+          "expected": 153.6,
+          "got": 153.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 16",
+          "expected": "SN-2002",
+          "got": "SN-2002",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 16",
+          "expected": "Popcorn White Cheddar",
+          "got": "Popcorn White Cheddar",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 16",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 16",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 16",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 16",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 16",
+          "expected": 19.2,
+          "got": 19.2,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 16",
+          "expected": 153.6,
+          "got": 153.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 17",
+          "expected": "SN-2110",
+          "got": "SN-2110",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 17",
+          "expected": "Rice Crackers Seaweed",
+          "got": "Rice Crackers Seaweed",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 17",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 17",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 17",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 17",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 17",
+          "expected": 24.6,
+          "got": 24.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 17",
+          "expected": 73.8,
+          "got": 73.8,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 18",
+          "expected": "SN-2205",
+          "got": "SN-2205",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 18",
+          "expected": "Granola Bars Oat Honey",
+          "got": "Granola Bars Oat Honey",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 18",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 18",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 18",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 18",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 18",
+          "expected": 20.4,
+          "got": 20.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 18",
+          "expected": 204,
+          "got": 204,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 19",
+          "expected": "SN-2206",
+          "got": "SN-2206",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 19",
+          "expected": "Granola Bars Chocolate Chip",
+          "got": "Granola Bars Chocolate Chip",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 19",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 19",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 19",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 19",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 19",
+          "expected": 20.4,
+          "got": 20.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 19",
+          "expected": 204,
+          "got": 204,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 20",
+          "expected": "SN-2301",
+          "got": "SN-2301",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 20",
+          "expected": "Beef Jerky Original",
+          "got": "Beef Jerky Original",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 20",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 20",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 20",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 20",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 20",
+          "expected": 54,
+          "got": 54,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 20",
+          "expected": 108,
+          "got": 108,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 21",
+          "expected": "SN-2302",
+          "got": "SN-2302",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 21",
+          "expected": "Beef Jerky Teriyaki",
+          "got": "Beef Jerky Teriyaki",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 21",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 21",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 21",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 21",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 21",
+          "expected": 54,
+          "got": 54,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 21",
+          "expected": 108,
+          "got": 108,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 22",
+          "expected": "SN-2410",
+          "got": "SN-2410",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 22",
+          "expected": "Mixed Nuts Deluxe",
+          "got": "Mixed Nuts Deluxe",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 22",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 22",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 22",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 22",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 22",
+          "expected": 48.75,
+          "got": 48.75,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 22",
+          "expected": 146.25,
+          "got": 146.25,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 23",
+          "expected": "SN-2505",
+          "got": "SN-2505",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 23",
+          "expected": "Sunflower Seeds Ranch",
+          "got": "Sunflower Seeds Ranch",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 23",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 23",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 23",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 23",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 23",
+          "expected": 13.8,
+          "got": 13.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 23",
+          "expected": 82.8,
+          "got": 82.8,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 24",
+          "expected": "SN-2506",
+          "got": "SN-2506",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 24",
+          "expected": "Sunflower Seeds Original",
+          "got": "Sunflower Seeds Original",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 24",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 24",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 24",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 24",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 24",
+          "expected": 13.8,
+          "got": 13.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 24",
+          "expected": 82.8,
+          "got": 82.8,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 25",
+          "expected": "SN-2620",
+          "got": "SN-2620",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 25",
+          "expected": "Animal Crackers Bulk",
+          "got": "Animal Crackers Bulk",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 25",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 25",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 25",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 25",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 25",
+          "expected": 18.9,
+          "got": 18.9,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 25",
+          "expected": 75.6,
+          "got": 75.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 26",
+          "expected": "SN-2701",
+          "got": "SN-2701",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 26",
+          "expected": "Corn Nuts Chile Picante",
+          "got": "Corn Nuts Chile Picante",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 26",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 26",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 26",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 26",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 26",
+          "expected": 15.4,
+          "got": 15.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 26",
+          "expected": 77,
+          "got": 77,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 27",
+          "expected": "SN-2802",
+          "got": "SN-2802",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 27",
+          "expected": "Dried Pineapple Rings",
+          "got": "Dried Pineapple Rings",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 27",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 27",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 27",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 27",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 27",
+          "expected": 33.6,
+          "got": 33.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 27",
+          "expected": 100.8,
+          "got": 100.8,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 28",
+          "expected": "SN-2903",
+          "got": "SN-2903",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 28",
+          "expected": "Chocolate Covered Almonds",
+          "got": "Chocolate Covered Almonds",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 28",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 28",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 28",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 28",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 28",
+          "expected": 41.25,
+          "got": 41.25,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 28",
+          "expected": 82.5,
+          "got": 82.5,
+          "ok": true
+        }
+      ],
+      "correct": 235,
+      "total": 235,
+      "linesExpected": 28,
+      "linesMatched": 28,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Bluewater Paper & Packaging",
+          "got": "Bluewater Paper & Packaging",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "BW-PS-40218",
+          "got": "BW-PS-40218",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-24",
+          "got": "2026-10-24",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11075",
+          "got": "PO-11075",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "BW-CUP-12",
+          "got": "BW-CUP-12",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Hot Cups 12oz Paper",
+          "got": "Hot Cups 12oz Paper",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "BW-LID-12",
+          "got": "BW-LID-12",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Hot Cup Lids 12oz",
+          "got": "Hot Cup Lids 12oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "BW-STR-07",
+          "got": "BW-STR-07",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Wrapped Straws 7.75in",
+          "got": "Wrapped Straws 7.75in",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": "BW-CLM-96",
+          "got": "BW-CLM-96",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Clamshell Containers 9x6",
+          "got": "Clamshell Containers 9x6",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 5",
+          "expected": "BW-FL-12",
+          "got": "BW-FL-12",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 5",
+          "expected": "Aluminum Foil Roll 12in",
+          "got": "Aluminum Foil Roll 12in",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 5",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 5",
+          "expected": "RL",
+          "got": "RL",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 5",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 51,
+      "total": 51,
+      "linesExpected": 5,
+      "linesMatched": 5,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Coastal Electric Parts",
+          "got": "Coastal Electric Parts",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "448377",
+          "got": "448377",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-28",
+          "got": "2026-10-28",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11086",
+          "got": "PO-11086",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 255.9,
+          "got": 255.9,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": 29.43,
+          "got": 29.43,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 285.33,
+          "got": 285.33,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "CE-EXT-6",
+          "got": "CE-EXT-6",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "POWER STRIP 6 OUTLET",
+          "got": "POWER STRIP 6 OUTLET",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 7.95,
+          "got": 7.95,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 95.4,
+          "got": 95.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "CE-BAT-AA",
+          "got": "CE-BAT-AA",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "ALKALINE BATTERY AA",
+          "got": "ALKALINE BATTERY AA",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 20,
+          "got": 20,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "PK",
+          "got": "PK",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 5.6,
+          "got": 5.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 112,
+          "got": 112,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "CE-BAT-9V",
+          "got": "CE-BAT-9V",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "ALKALINE BATTERY 9V",
+          "got": "ALKALINE BATTERY 9V",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "PK",
+          "got": "PK",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 4.85,
+          "got": 4.85,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 48.5,
+          "got": 48.5,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Harborline Janitorial Supply",
+          "got": "Harborline Janitorial Supply",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "INV-209310",
+          "got": "INV-209310",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-29",
+          "got": "2026-10-29",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11090",
+          "got": "PO-11090",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 326.15,
+          "got": 326.15,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 326.15,
+          "got": 326.15,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "HJ-6620",
+          "got": "HJ-6620",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Glass Cleaner Spray 32oz",
+          "got": "Glass Cleaner Spray 32oz",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 3,
+          "got": 3,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 46.8,
+          "got": 46.8,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 140.4,
+          "got": 140.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "HJ-6702",
+          "got": "HJ-6702",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Disinfectant Wipes Canister",
+          "got": "Disinfectant Wipes Canister",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 31.5,
+          "got": 31.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 126,
+          "got": 126,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "HJ-0870",
+          "got": "HJ-0870",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Nitrile Gloves Large",
+          "got": "Nitrile Gloves Large",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 5,
+          "got": 5,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "BX",
+          "got": "BX",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 11.95,
+          "got": 11.95,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 59.75,
+          "got": 59.75,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "unit_mismatch"
+      ],
+      "caughtFlags": [
+        "unit_mismatch"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Tri-Point Hardware Distributors",
+          "got": "Tri-Point Hardware Distributors",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "PS-55243",
+          "got": "PS-55243",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-30",
+          "got": "2026-10-30",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11093",
+          "got": "PO-11093",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "TP-60-115",
+          "got": "TP-60-115",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Paint Roller Kit 9in",
+          "got": "Paint Roller Kit 9in",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "TP-60-220",
+          "got": "TP-60-220",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Painter's Tape Blue 1.88in",
+          "got": "Painter's Tape Blue 1.88in",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "TP-60-301",
+          "got": "TP-60-301",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Drop Cloth Canvas 9x12",
+          "got": "Drop Cloth Canvas 9x12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "qty_short",
+        "low_confidence"
+      ],
+      "caughtFlags": [
+        "qty_short",
+        "low_confidence"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "packing_slip",
+          "got": "packing_slip",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Coastal Electric Parts",
+          "got": "Coastal Electric Parts",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "PL-448402",
+          "got": "PL-448402",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-30",
+          "got": "2026-10-30",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11095",
+          "got": "PO-11095",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "CE-LED-9W",
+          "got": "CE-LED-9W",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "LED BULB A19 9W 5000K",
+          "got": "LED BULB A19 9W 5000K",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "CE-LED-11W",
+          "got": "CE-LED-11W",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "LED BULB A19 11W 5000K",
+          "got": "LED BULB A19 11W 5000K",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "CE-SW-1P",
+          "got": "CE-SW-1P",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "TOGGLE SWITCH 1-POLE WHITE",
+          "got": "TOGGLE SWITCH 1-POLE WHITE",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 20,
+          "got": 20,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "EA",
+          "got": "EA",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "not_on_po",
+        "missing_from_shipment"
+      ],
+      "caughtFlags": [
+        "not_on_po",
+        "missing_from_shipment"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "es",
+          "got": "es",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Finca Los Pinos",
+          "got": "Finca Los Pinos",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "0347",
+          "got": "0347",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-31",
+          "got": "2026-10-31",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 196,
+          "got": 196,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 196,
+          "got": 196,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Guineos verdes",
+          "got": "Guineos verdes",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 40,
+          "got": 40,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "LB",
+          "got": "LB",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 0.85,
+          "got": 0.85,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 34,
+          "got": 34,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Plátanos",
+          "got": "Plátanos",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 60,
+          "got": 60,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "UN",
+          "got": "UN",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 0.6,
+          "got": 0.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 36,
+          "got": 36,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Aguacates",
+          "got": "Aguacates",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 24,
+          "got": 24,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "UN",
+          "got": "UN",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 1.5,
+          "got": 1.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 36,
+          "got": 36,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 4",
+          "expected": "Café en grano",
+          "got": "Café en grano",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 4",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 4",
+          "expected": "LB",
+          "got": "LB",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 4",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 4",
+          "expected": 9,
+          "got": 9,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 4",
+          "expected": 90,
+          "got": 90,
+          "ok": true
+        }
+      ],
+      "correct": 43,
+      "total": 43,
+      "linesExpected": 4,
+      "linesMatched": 4,
+      "extraLines": 0,
+      "expectedFlags": [
+        "missing_sku",
+        "po_missing"
+      ],
+      "caughtFlags": [
+        "missing_sku",
+        "po_missing"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Bluewater Paper & Packaging",
+          "got": "Bluewater Paper & Packaging",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "BW-0093288",
+          "got": "BW-0093288",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-10-07",
+          "got": "2026-10-07",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "4500-0193",
+          "got": "4500-0193",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 174.4,
+          "got": 174.4,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": 18.5,
+          "got": 18.5,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 192.9,
+          "got": 192.9,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "BW-PT-800",
+          "got": "BW-PT-800",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "PAPER TOWEL ROLLS KITCHEN",
+          "got": "PAPER TOWEL ROLLS KITCHEN",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 32.9,
+          "got": 32.9,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 131.6,
+          "got": 131.6,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "BW-FL-18",
+          "got": "BW-FL-18",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "ALUMINUM FOIL ROLL 18IN",
+          "got": "ALUMINUM FOIL ROLL 18IN",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 2,
+          "got": 2,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "RL",
+          "got": "RL",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 21.4,
+          "got": 21.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 42.8,
+          "got": 42.8,
+          "ok": true
+        }
+      ],
+      "correct": 27,
+      "total": 27,
+      "linesExpected": 2,
+      "linesMatched": 2,
+      "extraLines": 0,
+      "expectedFlags": [],
+      "caughtFlags": [],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "en",
+          "got": "en",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Summit Snack Wholesale",
+          "got": "Summit Snack Wholesale",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "SSW-77231",
+          "got": "SSW-77231",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-11-01",
+          "got": "2026-11-01",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "PO-11099",
+          "got": "PO-11099",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 448.8,
+          "got": 448.8,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 448.8,
+          "got": 448.8,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "SN-2205",
+          "got": "SN-2205",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Granola Bars Oat Honey",
+          "got": "Granola Bars Oat Honey Lot 26-284",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 20.4,
+          "got": 20.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 122.4,
+          "got": 122.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "SN-2206",
+          "got": "SN-2206",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Granola Bars Chocolate Chip",
+          "got": "Granola Bars Chocolate Chip",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 20.4,
+          "got": 20.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 204,
+          "got": 204,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "SN-2205",
+          "got": "SN-2205",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Granola Bars Oat Honey",
+          "got": "Granola Bars Oat Honey Lot 26-291",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CS",
+          "got": "CS",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 20.4,
+          "got": 20.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 122.4,
+          "got": 122.4,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "duplicate_sku",
+        "qty_over"
+      ],
+      "caughtFlags": [
+        "duplicate_sku",
+        "qty_over"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    },
+    {
+      "fields": [
+        {
+          "field": "document_type",
+          "where": "header",
+          "expected": "invoice",
+          "got": "invoice",
+          "ok": true
+        },
+        {
+          "field": "language",
+          "where": "header",
+          "expected": "es",
+          "got": "es",
+          "ok": true
+        },
+        {
+          "field": "supplier_name",
+          "where": "header",
+          "expected": "Distribuidora La Ceiba",
+          "got": "Distribuidora La Ceiba",
+          "ok": true
+        },
+        {
+          "field": "document_number",
+          "where": "header",
+          "expected": "F-0012603",
+          "got": "F-0012603",
+          "ok": true
+        },
+        {
+          "field": "document_date",
+          "where": "header",
+          "expected": "2026-11-02",
+          "got": "2026-11-02",
+          "ok": true
+        },
+        {
+          "field": "po_number",
+          "where": "header",
+          "expected": "OC-11101",
+          "got": "OC-11101",
+          "ok": true
+        },
+        {
+          "field": "subtotal",
+          "where": "header",
+          "expected": 665.2,
+          "got": 665.2,
+          "ok": true
+        },
+        {
+          "field": "tax",
+          "where": "header",
+          "expected": 76.5,
+          "got": 76.5,
+          "ok": true
+        },
+        {
+          "field": "shipping",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "discount",
+          "where": "header",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "total",
+          "where": "header",
+          "expected": 741.7,
+          "got": 741.7,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 1",
+          "expected": "LC-CAF-14",
+          "got": "LC-CAF-14",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 1",
+          "expected": "Café molido 14 oz, caja de 12",
+          "got": "Café molido 14 oz, caja de 12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 1",
+          "expected": 6,
+          "got": 6,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 1",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 1",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 1",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 1",
+          "expected": 62.4,
+          "got": 62.4,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 1",
+          "expected": 374.4,
+          "got": 374.4,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 2",
+          "expected": "LC-AZU-04",
+          "got": "LC-AZU-04",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 2",
+          "expected": "Azúcar refinada 4 lb, caja de 10",
+          "got": "Azúcar refinada 4 lb, caja de 10",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 2",
+          "expected": 4,
+          "got": 4,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 2",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 2",
+          "expected": 10,
+          "got": 10,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 2",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 2",
+          "expected": 29.5,
+          "got": 29.5,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 2",
+          "expected": 118,
+          "got": 118,
+          "ok": true
+        },
+        {
+          "field": "sku",
+          "where": "line 3",
+          "expected": "LC-ARZ-03",
+          "got": "LC-ARZ-03",
+          "ok": true
+        },
+        {
+          "field": "description",
+          "where": "line 3",
+          "expected": "Arroz grano largo 3 lb, caja de 12",
+          "got": "Arroz grano largo 3 lb, caja de 12",
+          "ok": true
+        },
+        {
+          "field": "quantity",
+          "where": "line 3",
+          "expected": 8,
+          "got": 8,
+          "ok": true
+        },
+        {
+          "field": "unit",
+          "where": "line 3",
+          "expected": "CJ",
+          "got": "CJ",
+          "ok": true
+        },
+        {
+          "field": "pack_size",
+          "where": "line 3",
+          "expected": 12,
+          "got": 12,
+          "ok": true
+        },
+        {
+          "field": "quantity_backordered",
+          "where": "line 3",
+          "expected": null,
+          "got": null,
+          "ok": true
+        },
+        {
+          "field": "unit_price",
+          "where": "line 3",
+          "expected": 21.6,
+          "got": 21.6,
+          "ok": true
+        },
+        {
+          "field": "line_total",
+          "where": "line 3",
+          "expected": 172.8,
+          "got": 172.8,
+          "ok": true
+        }
+      ],
+      "correct": 35,
+      "total": 35,
+      "linesExpected": 3,
+      "linesMatched": 3,
+      "extraLines": 0,
+      "expectedFlags": [
+        "price_mismatch"
+      ],
+      "caughtFlags": [
+        "price_mismatch"
+      ],
+      "missedFlags": [],
+      "extraProblemFlags": []
+    }
+  ]
+}

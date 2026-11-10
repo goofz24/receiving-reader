@@ -1,0 +1,74 @@
+{
+  "id": "05-invoice-subtotal-error",
+  "at": "2026-11-10T00:00:12.583Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Coastal Electric Parts",
+    "document_number": "448120",
+    "document_date": "2026-10-21",
+    "po_number": "PO-11064",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "CE-BRK-20",
+        "description": "CIRCUIT BREAKER 20A 1P",
+        "quantity": 10,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 8.75,
+        "line_total": 87.5,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-OUT-15W",
+        "description": "DUPLEX OUTLET 15A WHITE",
+        "quantity": 25,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 1.89,
+        "line_total": 47.25,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-WN-YEL",
+        "description": "WIRE NUTS YELLOW",
+        "quantity": 4,
+        "unit": "BG",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 6.4,
+        "line_total": 25.6,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "CE-LED-9W",
+        "description": "LED BULB A19 9W 5000K",
+        "quantity": 36,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 2.15,
+        "line_total": 77.4,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 247.75,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": 247.75,
+    "warnings": []
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5162,
+  "outputTokens": 1024,
+  "costUsd": 0.0010282,
+  "seconds": 4.303
+}

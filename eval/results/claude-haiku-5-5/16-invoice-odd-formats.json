@@ -1,0 +1,52 @@
+{
+  "id": "16-invoice-odd-formats",
+  "at": "2026-11-10T00:01:13.543Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Bluewater Paper & Packaging",
+    "document_number": "BW-0093288",
+    "document_date": "2026-10-07",
+    "po_number": "4500-0193",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "BW-PT-800",
+        "description": "PAPER TOWEL ROLLS KITCHEN",
+        "quantity": 4,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 32.9,
+        "line_total": 131.6,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "BW-FL-18",
+        "description": "ALUMINUM FOIL ROLL 18IN",
+        "quantity": 2,
+        "unit": "RL",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 21.4,
+        "line_total": 42.8,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 174.4,
+    "tax": null,
+    "shipping": 18.5,
+    "discount": null,
+    "total": 192.9,
+    "warnings": [
+      "No tax line is printed on this invoice; the currency is shown only as $ and was read as USD."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5119,
+  "outputTokens": 890,
+  "costUsd": 0.0009569000000000001,
+  "seconds": 4.388
+}

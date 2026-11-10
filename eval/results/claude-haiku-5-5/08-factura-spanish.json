@@ -1,0 +1,86 @@
+{
+  "id": "08-factura-spanish",
+  "at": "2026-11-10T00:00:26.659Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "es",
+    "supplier_name": "Distribuidora La Ceiba",
+    "document_number": "F-0012457",
+    "document_date": "2026-10-15",
+    "po_number": "OC-11045",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "LC-ARZ-03",
+        "description": "Arroz grano largo 3 lb, caja de 12",
+        "quantity": 10,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 21.6,
+        "line_total": 216,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-HBR-16",
+        "description": "Habichuelas rosadas 16 oz, caja de 24",
+        "quantity": 6,
+        "unit": "CJ",
+        "pack_size": 24,
+        "quantity_backordered": null,
+        "unit_price": 26.4,
+        "line_total": 158.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-ACE-48",
+        "description": "Aceite vegetal 48 oz, caja de 9",
+        "quantity": 4,
+        "unit": "CJ",
+        "pack_size": 9,
+        "quantity_backordered": null,
+        "unit_price": 36,
+        "line_total": 144,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-CAF-14",
+        "description": "Café molido 14 oz, caja de 12",
+        "quantity": 5,
+        "unit": "CJ",
+        "pack_size": 12,
+        "quantity_backordered": null,
+        "unit_price": 58.8,
+        "line_total": 294,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "LC-SAL-26",
+        "description": "Sal yodada 26 oz, caja de 24",
+        "quantity": 2,
+        "unit": "CJ",
+        "pack_size": 24,
+        "quantity_backordered": null,
+        "unit_price": 16.8,
+        "line_total": 33.6,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 846,
+    "tax": 97.29,
+    "shipping": null,
+    "discount": null,
+    "total": 943.29,
+    "warnings": []
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5224,
+  "outputTokens": 1280,
+  "costUsd": 0.0011624,
+  "seconds": 6.173
+}

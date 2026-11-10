@@ -1,0 +1,86 @@
+{
+  "id": "01-invoice-basic",
+  "at": "2026-11-09T23:59:54.608Z",
+  "extraction": {
+    "document_type": "invoice",
+    "language": "en",
+    "supplier_name": "Harborline Janitorial Supply",
+    "document_number": "INV-208841",
+    "document_date": "2026-10-14",
+    "po_number": "PO-11042",
+    "currency": "USD",
+    "line_items": [
+      {
+        "sku": "HJ-4410",
+        "description": "Trash Can Liners 33 Gal Black",
+        "quantity": 6,
+        "unit": "CS",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 38.4,
+        "line_total": 230.4,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-2201",
+        "description": "All-Purpose Cleaner Concentrate 1 Gal",
+        "quantity": 12,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 9.85,
+        "line_total": 118.2,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-3105",
+        "description": "Microfiber Cloths Blue",
+        "quantity": 10,
+        "unit": "PK",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 7.2,
+        "line_total": 72,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-0870",
+        "description": "Nitrile Gloves Large",
+        "quantity": 8,
+        "unit": "BX",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 11.95,
+        "line_total": 95.6,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "HJ-5512",
+        "description": "Floor Mop Head Cotton #24",
+        "quantity": 4,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": 6.5,
+        "line_total": 26,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": 542.2,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": 542.2,
+    "warnings": []
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5156,
+  "outputTokens": 971,
+  "costUsd": 0.0010011,
+  "seconds": 4.463
+}

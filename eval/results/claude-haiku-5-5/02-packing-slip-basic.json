@@ -1,0 +1,77 @@
+{
+  "id": "02-packing-slip-basic",
+  "at": "2026-11-09T23:59:58.830Z",
+  "extraction": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Tri-Point Hardware Distributors",
+    "document_number": "PS-55120",
+    "document_date": "2026-10-16",
+    "po_number": "PO-11051",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "TP-10-332",
+        "description": "Wood Screws #8 × 1-1/4\"",
+        "quantity": 20,
+        "unit": "BX",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-22-108",
+        "description": "Duct Tape Silver 2in",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-41-900",
+        "description": "Extension Cord 25ft Outdoor",
+        "quantity": 6,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-07-215",
+        "description": "Utility Knife Retractable",
+        "quantity": 12,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": null,
+    "warnings": [
+      "Packing slip shows no prices or totals; amounts left blank.",
+      "Supplier item numbers shown with hyphens on the printed slip (for example TP-10-332); PO number printed as PO-11051."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5037,
+  "outputTokens": 799,
+  "costUsd": 0.0009032,
+  "seconds": 4.218
+}

@@ -1,0 +1,66 @@
+{
+  "id": "13-packing-slip-hand-correction",
+  "at": "2026-11-10T00:00:59.539Z",
+  "extraction": {
+    "document_type": "packing_slip",
+    "language": "en",
+    "supplier_name": "Tri-Point Hardware Distributors",
+    "document_number": "PS-55243",
+    "document_date": "2026-10-30",
+    "po_number": "PO-11093",
+    "currency": null,
+    "line_items": [
+      {
+        "sku": "TP-60-115",
+        "description": "Paint Roller Kit 9in",
+        "quantity": 8,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "low",
+        "note": "Shipped quantity hand-corrected: printed 10 crossed out and handwritten 8 next to it; handwritten 8 used."
+      },
+      {
+        "sku": "TP-60-220",
+        "description": "Painter's Tape Blue 1.88in",
+        "quantity": 24,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      },
+      {
+        "sku": "TP-60-301",
+        "description": "Drop Cloth Canvas 9x12",
+        "quantity": 6,
+        "unit": "EA",
+        "pack_size": null,
+        "quantity_backordered": null,
+        "unit_price": null,
+        "line_total": null,
+        "confidence": "high",
+        "note": null
+      }
+    ],
+    "subtotal": null,
+    "tax": null,
+    "shipping": null,
+    "discount": null,
+    "total": null,
+    "warnings": [
+      "Packing slip has no prices or totals; subtotal, tax, shipping, discount and total left blank.",
+      "Line 1 shipped quantity was hand-corrected from 10 to 8; verify against the physical count.",
+      "Date printed as October 30, 2026 is unambiguous, no day/month warning needed."
+    ]
+  },
+  "model": "claude-haiku-5-5",
+  "inputTokens": 5379,
+  "outputTokens": 522,
+  "costUsd": 0.0007989,
+  "seconds": 3.13
+}
